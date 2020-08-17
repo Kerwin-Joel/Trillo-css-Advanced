@@ -1,0 +1,55 @@
+@import "base";
+
+.container{
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: white;
+    box-shadow: var(--shadow-dark);
+
+    min-height: 50rem;
+    
+    @media only screen and (max-width: $bd--largest){
+        margin: auto;
+        max-width: 100%;
+    }
+}
+
+.header{
+    height: 7rem;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-grey-light-3);
+    
+    @media only screen and (max-width: $bd--smallest){
+        flex-wrap: wrap;
+        height: 12rem;
+
+    }
+
+}
+
+.content{
+    display:flex;
+
+    @media only screen and (max-width: $bd--medium){
+        flex-direction: column;
+    }
+}
+
+.sidebar{ 
+    flex-basis:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-grey-dark-1);
+    
+    
+    
+}
+
+.hotel-view{
+    flex:1;
+
+}
